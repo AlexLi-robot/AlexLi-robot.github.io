@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publications - Alex Li</title>
+  <!-- icon！ -->
+  <link rel="icon" type="image/png" href="imgs/image.png"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      padding-top: 70px;
+    }
+    .navbar {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .profile-img {
+      max-width: 100%;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-weight: bold;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.3rem;
+    }
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      padding: 2rem 0;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    .publication-entry {
+      margin-bottom: 2.5rem;
+    }
+    .publication-entry .col-md-3 {
+        text-align: center;
+    }
+    .publication-entry img {
+        max-width: 100%;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    .publication-entry h4 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-bottom: 0.3rem;
+    }
+    .publication-entry h4 a {
+        color: #2c5aa2;
+        text-decoration: none;
+    }
+    .publication-entry h4 a:hover {
+        text-decoration: underline;
+    }
+    .publication-entry p {
+        margin-bottom: 0.25rem;
+        line-height: 1.4;
+    }
+    .publication-authors {
+        font-size: 0.95rem;
+    }
+    .publication-venue {
+        font-size: 0.95rem;
+    }
+    .publication-links a {
+        margin-right: 10px;
+    }
+    .publication-award {
+        color: #b54a4a;
+        font-weight: bold;
+        font-size: 0.95rem;
+    }
+    .publication-filters, .publication-topics {
+        color: #555;
+        font-size: 0.9rem;
+    }
+    .publication-filters a, .publication-topics a {
+        color: #2c5aa2;
+        text-decoration: none;
+    }
+    .publication-filters a:hover, .publication-topics a:hover {
+        text-decoration: underline;
+    }
+    .publication-topics {
+        margin-top: -0.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Alex Li</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="publication.html">Publication</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://groups.inf.ed.ac.uk/advr/people.html">Lab</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Main -->
+<div class="container">
+
+  <h2>Publications</h2>
+  <p class="publication-filters">
+    ( <a href="#" id="show-selected">show selected</a> /
+    <a href="#" id="sort-by-date">show by date</a> )
+  </p>
+  <p class="publication-topics">
+    Research Topics:
+    <a href="#" class="topic-filter" data-topic="all">All Topics</a> /
+    <a href="#" class="topic-filter" data-topic="Science Robotics & Nature Machine Intelligence">Science Robotics & Nature Machine Intelligence</a> /
+    <a href="#" class="topic-filter" data-topic="Dexterous Hands & Tactile Manipulation">Dexterous Hands & Tactile Manipulation</a> /
+    <a href="#" class="topic-filter" data-topic="Manipulation">Manipulation</a> /
+    <a href="#" class="topic-filter" data-topic="Teleoperation">Teleoperation</a> /
+    <a href="#" class="topic-filter" data-topic="Legged Locomotion & Mobility">Legged Locomotion & Mobility</a>
+  </p>
+
+  <div id="publications-list">
+    <div class="publication-entry row" data-year="2023" data-topic="Science Robotics & Nature Machine Intelligence" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/sr_nmi_1.png" alt="Hierarchical Generative Modelling for Autonomous Robots">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://www.nature.com/articles/s42256-023-00752-z" target="_blank">Hierarchical Generative Modelling for Autonomous Robots</a></h4>
+        <p class="publication-authors">
+          Kai Yuan, Noor Sajid, Karl Friston, <strong>Zhibin Li†</strong>
+        </p>
+        <p class="publication-venue">
+          <em>Nature Machine Intelligence, Vol 5, 1402–1414, 2023</em>
+        </p>
+        <p class="publication-links">
+          <a href="https://www.nature.com/articles/s42256-023-00752-z" target="_blank">[Paper]</a>
+          <a href="#" target="_blank">[Project Page]</a>
+          <a href="#" target="_blank">[Code]</a>
+          <a href="#" target="_blank">[Video]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2023" data-topic="Science Robotics & Nature Machine Intelligence" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/sr_nmi_2.png" alt="RObotic MAnipulation Network (RO-MAN): Hybrid Hierarchical Learning for Solving Complex Sequential Tasks">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://www.nature.com/articles/s42256-023-00709-2" target="_blank">RObotic MAnipulation Network (RO-MAN): Hybrid Hierarchical Learning for Solving Complex Sequential Tasks</a></h4>
+        <p class="publication-authors">
+          Eleftherios Triantafyllidis, Fernando Acero, Zhaocheng Liu, <strong>Zhibin Li†</strong>
+        </p>
+        <p class="publication-venue">
+          <em>Nature Machine Intelligence, Vol 5, 991–1005, 2023</em>
+        </p>
+        <p class="publication-links">
+          <a href="https://www.nature.com/articles/s42256-023-00709-2" target="_blank">[Paper]</a>
+          <a href="#" target="_blank">[Project Page]</a>
+          <a href="#" target="_blank">[Code]</a>
+          <a href="#" target="_blank">[Video]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2023" data-topic="Science Robotics & Nature Machine Intelligence" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/sr_nmi_3.png" alt="Identifying Important Sensory Feedback for Learning Locomotion Skills">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://www.nature.com/articles/s42256-023-00701-w" target="_blank">Identifying Important Sensory Feedback for Learning Locomotion Skills</a></h4>
+        <p class="publication-authors">
+          Wanming Yu, Chuanyu Yang, Christopher McGreavy, Eleftherios Triantafyllidis, Guillaume Bellegarda, Milad Shafiee, Auke Jan Ijspeert, <strong>Zhibin Li†</strong>
+        </p>
+        <p class="publication-venue">
+          <em>Nature Machine Intelligence, Vol 5, 919–932, 2023</em>
+        </p>
+        <p class="publication-links">
+          <a href="https://www.nature.com/articles/s42256-023-00701-w" target="_blank">[Paper]</a>
+          <a href="#" target="_blank">[Project Page]</a>
+          <a href="#" target="_blank">[Code]</a>
+          <a href="#" target="_blank">[Video]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2020" data-topic="Science Robotics & Nature Machine Intelligence" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/sr_nmi_4.png" alt="Multi-Expert Learning of Adaptive Legged Locomotion">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://www.science.org/doi/10.1126/scirobotics.abb2174" target="_blank">Multi-Expert Learning of Adaptive Legged Locomotion</a></h4>
+        <p class="publication-authors">
+          Chuanyu Yang, Kai Yuan, Wanming Yu, Qiuguo Zhu, <strong>Zhibin Li†</strong>
+        </p>
+        <p class="publication-venue">
+          <em>Science Robotics, Vol 5 (49), 2020</em>
+        </p>
+        <p class="publication-links">
+          <a href="https://www.science.org/doi/10.1126/scirobotics.abb2174" target="_blank">[Paper]</a>
+          <a href="#" target="_blank">[Project Page]</a>
+          <a href="#" target="_blank">[Code]</a>
+          <a href="#" target="_blank">[Video]</a>
+        </p>
+        <p class="publication-award">Featured by BBC, Wired, and New Scientist</p>
+      </div>
+    </div>
+    <!-- Dexerous Hands & Tactile Manipulation -->
+    <div class="publication-entry row" data-year="2024" data-topic="Dexterous Hands & Tactile Manipulation" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/tactile_1.png" alt="Efficient Tactile Sensing-based Learning for Dual-arm Fine Pinch-Grasp Skills">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://ieeexplore.ieee.org/document/10802651" target="_blank">Efficient Tactile Sensing-based Learning from Limited Real-world Demonstrations for Dual-arm Fine Pinch-Grasp Skills</a></h4>
+        <p class="publication-authors">
+          Mao, X., Xu, Y., Wen, R., Kasaei, M., Yu, W., Psomopoulou, E., ... Li, Z.
+        </p>
+        <p class="publication-venue">
+          <em>IEEE/RSJ IROS, 2024, pp. 5112-5119</em>
+        </p>
+        <p class="publication-links">
+          <a href="https://ieeexplore.ieee.org/document/10802651" target="_blank">[Paper]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2023" data-topic="Dexterous Hands & Tactile Manipulation" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/tactile_2.png" alt="Dexterous In-Hand Manipulation of Slender Cylindrical Objects">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="http://arxiv.org/abs/2304.05141v1" target="_blank">Dexterous In-Hand Manipulation of Slender Cylindrical Objects through Deep Reinforcement Learning with Tactile Sensing</a></h4>
+        <p class="publication-authors">
+          Hu, W., Huang, B., Lee, W. W., Yang, S., Zheng, Y., & Li, Z.
+        </p>
+        <p class="publication-venue">
+          <em>arXiv, 2023</em>
+        </p>
+        <p class="publication-links">
+          <a href="http://arxiv.org/abs/2304.05141v1" target="_blank">[Paper]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2022" data-topic="Dexterous Hands & Tactile Manipulation" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/tactile_3.png" alt="Learning Adaptive Grasping From Human Demonstrations">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://ieeexplore.ieee.org/document/9714723" target="_blank">Learning Adaptive Grasping From Human Demonstrations</a></h4>
+        <p class="publication-authors">
+          Shuaijun Wang, Wenbin Hu, Lining Sun, Xin Wang, Zhibin Li
+        </p>
+        <p class="publication-venue">
+          <em>IEEE/ASME Transactions on Mechatronics, 2022</em>
+        </p>
+        <p class="publication-links">
+          <a href="https://ieeexplore.ieee.org/document/9714723" target="_blank">[Paper]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2024" data-topic="Manipulation" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/manipulation_2.png" alt="Neural ODE-based Imitation Learning (NODE-IL): Data-Efficient Imitation Learning for Long-Horizon Multi-Skill Robot Manipulation">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://ieeexplore.ieee.org/document/10802736" target="_blank">Neural ODE-based Imitation Learning (NODE-IL): Data-Efficient Imitation Learning for Long-Horizon Multi-Skill Robot Manipulation</a></h4>
+        <p class="publication-authors">
+          Zhao, S., Xu, Y., Kasaei, M., Khadem, M., & Li, Z.
+        </p>
+        <p class="publication-venue">
+          <em>IEEE International Conference on Intelligent Robots and Systems (IROS), 2024, pp. 8524-8530</em>
+        </p>
+        <p class="publication-links">
+          <a href="https://ieeexplore.ieee.org/document/10802736" target="_blank">[Paper]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2024" data-topic="Manipulation" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/manipulation_3.png" alt="DexSkills: Skill Segmentation Using Haptic Data for Learning Autonomous Long-Horizon Robotic Manipulation Tasks">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://ieeexplore.ieee.org/document/10802807" target="_blank">DexSkills: Skill Segmentation Using Haptic Data for Learning Autonomous Long-Horizon Robotic Manipulation Tasks</a></h4>
+        <p class="publication-authors">
+          Mao, X., Giudici, G., Coppola, C., Althoefer, K., Farkhatdinov, I., Li, Z., & Jamone, L.
+        </p>
+        <p class="publication-venue">
+          <em>IEEE International Conference on Intelligent Robots and Systems (IROS), 2024, pp. 5104-5111</em>
+        </p>
+        <p class="publication-links">
+          <a href="https://ieeexplore.ieee.org/document/10802807" target="_blank">[Paper]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2024" data-topic="Manipulation" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/manipulation_4.png" alt="Intrinsic Language-Guided Exploration for Complex Long-Horizon Robotic Manipulation Tasks">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://ieeexplore.ieee.org/document/10611483" target="_blank">Intrinsic Language-Guided Exploration for Complex Long-Horizon Robotic Manipulation Tasks</a></h4>
+        <p class="publication-authors">
+          Triantafyllidis, E., Christianos, F., & Li, Z.
+        </p>
+        <p class="publication-venue">
+          <em>IEEE International Conference on Robotics and Automation (ICRA), 2024, pp. 7493-7500</em>
+        </p>
+        <p class="publication-links">
+          <a href="https://ieeexplore.ieee.org/document/10611483" target="_blank">[Paper]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2023" data-topic="Manipulation" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/manipulation_5.png" alt="Modular Neural Network Policies for Learning In-Flight Object Catching with a Robot Hand-Arm System">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://ieeexplore.ieee.org/document/10341463" target="_blank">Modular Neural Network Policies for Learning In-Flight Object Catching with a Robot Hand-Arm System</a></h4>
+        <p class="publication-authors">
+          Hu, W., Acero, F., Triantafyllidis, E., Liu, Z., & Li, Z.
+        </p>
+        <p class="publication-venue">
+          <em>IEEE International Conference on Intelligent Robots and Systems (IROS), 2023, pp. 944-951</em>
+        </p>
+        <p class="publication-links">
+          <a href="https://ieeexplore.ieee.org/document/10341463" target="_blank">[Paper]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2023" data-topic="Manipulation" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/manipulation_6.png" alt="Run and Catch: Dynamic Object-Catching of Quadrupedal Robots">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://ieeexplore.ieee.org/document/10341977" target="_blank">Run and Catch: Dynamic Object-Catching of Quadrupedal Robots</a></h4>
+        <p class="publication-authors">
+          You, Y., Liu, T., Liang, X., Xu, Z., Zhou, M., Li, Z., & Zhang, S.
+        </p>
+        <p class="publication-venue">
+          <em>IEEE International Conference on Intelligent Robots and Systems (IROS), 2023, pp. 743-750</em>
+        </p>
+        <p class="publication-links">
+          <a href="https://ieeexplore.ieee.org/document/10341977" target="_blank">[Paper]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2023" data-topic="Manipulation" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/manipulation_7.png" alt="Language-guided Robot Grasping: CLIP-based Referring Grasp Synthesis in Clutter">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://proceedings.mlr.press/v229/tziafas23a.html" target="_blank">Language-guided Robot Grasping: CLIP-based Referring Grasp Synthesis in Clutter</a></h4>
+        <p class="publication-authors">
+          Tziafas, G., Xu, Y., Goel, A., Kasaei, M., Li, Z., & Kasaei, H.
+        </p>
+        <p class="publication-venue">
+          <em>Proceedings of The 7th Conference on Robot Learning, Vol. 229, 2023, pp. 1450-1466</em>
+        </p>
+        <p class="publication-links">
+          <a href="https://proceedings.mlr.press/v229/tziafas23a.html" target="_blank">[Paper]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2023" data-topic="Manipulation" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/manipulation_8.png" alt="Learning Fine Pinch-Grasp Skills using Tactile Sensing from A Few Real-world Demonstrations">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="http://arxiv.org/abs/2307.04619v2" target="_blank">Learning Fine Pinch-Grasp Skills using Tactile Sensing from A Few Real-world Demonstrations</a></h4>
+        <p class="publication-authors">
+          Mao, X., Xu, Y., Wen, R., Kasaei, M., Yu, W., Psomopoulou, E., ... Li, Z.
+        </p>
+        <p class="publication-venue">
+          <em>arXiv, 2023</em>
+        </p>
+        <p class="publication-links">
+          <a href="http://arxiv.org/abs/2307.04619v2" target="_blank">[Paper]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2023" data-topic="Manipulation" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/manipulation_9.png" alt="Instance-wise Grasp Synthesis for Robotic Grasping">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://ieeexplore.ieee.org/document/10161149" target="_blank">Instance-wise Grasp Synthesis for Robotic Grasping</a></h4>
+        <p class="publication-authors">
+          Xu, Y., Kasaei, M., Kasaei, H., & Li, Z.
+        </p>
+        <p class="publication-venue">
+          <em>IEEE International Conference on Robotics and Automation (ICRA), 2023, pp. 1744-1750</em>
+        </p>
+        <p class="publication-links">
+          <a href="https://ieeexplore.ieee.org/document/10161149" target="_blank">[Paper]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2023" data-topic="Manipulation" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/manipulation_10.png" alt="Data-efficient Non-parametric Modelling and Control of an Extensible Soft Manipulator">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://ieeexplore.ieee.org/document/10161275" target="_blank">Data-efficient Non-parametric Modelling and Control of an Extensible Soft Manipulator</a></h4>
+        <p class="publication-authors">
+          Kasaei, M., Babarahmati, K. K., Li, Z., & Khadem, M.
+        </p>
+        <p class="publication-venue">
+          <em>IEEE International Conference on Robotics and Automation (ICRA), 2023, pp. 2641-2647</em>
+        </p>
+        <p class="publication-links">
+          <a href="https://ieeexplore.ieee.org/document/10161275" target="_blank">[Paper]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2023" data-topic="Manipulation" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/manipulation_11.png" alt="A Data-efficient Neural ODE Framework for Optimal Control of Soft Manipulators">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://proceedings.mlr.press/v229/kasaei23a.html" target="_blank">A Data-efficient Neural ODE Framework for Optimal Control of Soft Manipulators</a></h4>
+        <p class="publication-authors">
+          Kasaei, M., Babarahmati, K. K., Li, Z., & Khadem, M.
+        </p>
+        <p class="publication-venue">
+          <em>Proceedings of The 7th Conference on Robot Learning, Vol. 229, 2023, pp. 2700-2713</em>
+        </p>
+        <p class="publication-links">
+          <a href="https://proceedings.mlr.press/v229/kasaei23a.html" target="_blank">[Paper]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2020" data-topic="Manipulation" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/manipulation_12.png" alt="Learning Pregrasp Manipulation of Objects from Ungraspable Poses">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://ieeexplore.ieee.org/document/9196982" target="_blank">Learning Pregrasp Manipulation of Objects from Ungraspable Poses</a></h4>
+        <p class="publication-authors">
+          Sun, Z., Yuan, K., Hu, W., Yang, C., & Li, Z.
+        </p>
+        <p class="publication-venue">
+          <em>IEEE International Conference on Robotics and Automation (ICRA), 2020, pp. 9917-9923</em>
+        </p>
+        <p class="publication-links">
+          <a href="https://ieeexplore.ieee.org/document/9196982" target="_blank">[Paper]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2023" data-topic="Teleoperation" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/teleoperation_1.png" alt="Feasibility Retargeting for Multi-contact Teleoperation and Physical Interaction">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="http://dx.doi.org/10.1109/tmech.2022.3152844/mm2" target="_blank">Feasibility Retargeting for Multi-contact Teleoperation and Physical Interaction</a></h4>
+        <p class="publication-authors">
+          Rouxel, Q., Wen, R., Li, Z., Tiseo, C., Mouret, J.-B., & Ivaldi, S.
+        </p>
+        <p class="publication-venue">
+          <em>2023</em>
+        </p>
+        <p class="publication-links">
+          <a href="http://dx.doi.org/10.1109/tmech.2022.3152844/mm2" target="_blank">[Paper]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2021" data-topic="Teleoperation" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/teleoperation_2.png" alt="Robust High-Transparency Haptic Exploration for Dexterous Telemanipulation">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://ieeexplore.ieee.org/document/9561968" target="_blank">Robust High-Transparency Haptic Exploration for Dexterous Telemanipulation</a></h4>
+        <p class="publication-authors">
+          Babarahmati, K. K., Tiseo, C., Rouxel, Q., Li, Z., & Mistry, M.
+        </p>
+        <p class="publication-venue">
+          <em>IEEE International Conference on Robotics and Automation (ICRA), 2021, pp. 10146-10152</em>
+        </p>
+        <p class="publication-links">
+          <a href="https://ieeexplore.ieee.org/document/9561968" target="_blank">[Paper]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2021" data-topic="Teleoperation" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/teleoperation_3.png" alt="Considerations and Challenges of Measuring Operator Performance in Telepresence and Teleoperation Entailing Mixed Reality Technologies">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="http://arxiv.org/abs/2103.12702v2" target="_blank">Considerations and Challenges of Measuring Operator Performance in Telepresence and Teleoperation Entailing Mixed Reality Technologies</a></h4>
+        <p class="publication-authors">
+          Triantafyllidis, E., & Li, Z.
+        </p>
+        <p class="publication-venue">
+          <em>ACM CHI 2021 Conference on Human Factors in Computing Systems Workshop CHI' 21, 2021</em>
+        </p>
+        <p class="publication-links">
+          <a href="http://arxiv.org/abs/2103.12702v2" target="_blank">[Paper]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2022" data-topic="Teleoperation" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/teleoperation_4.png" alt="Haptic Bimanual System for Teleoperation of Time-Delayed Tasks">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://ieeexplore.ieee.org/document/9739628" target="_blank">Haptic Bimanual System for Teleoperation of Time-Delayed Tasks</a></h4>
+        <p class="publication-authors">
+          Sena, A., Rouxel, Q., Ivanova, E., Burdet, E., & Li, Z.
+        </p>
+        <p class="publication-venue">
+          <em>IEEE International Conference on Robotics and Biomimetics (ROBIO), 2021, pp. 1234-1239</em>
+        </p>
+        <p class="publication-links">
+          <a href="https://ieeexplore.ieee.org/document/9739628" target="_blank">[Paper]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2024" data-topic="Legged Locomotion & Mobility" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/locomotion_1.png" alt="Distilling Reinforcement Learning Policies for Interpretable Robot Locomotion: Gradient Boosting Machines and Symbolic Regression">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://ieeexplore.ieee.org/document/10802433" target="_blank">Distilling Reinforcement Learning Policies for Interpretable Robot Locomotion: Gradient Boosting Machines and Symbolic Regression</a></h4>
+        <p class="publication-authors">
+          Acero, F., & Li, Z.
+        </p>
+        <p class="publication-venue">
+          <em>IEEE International Conference on Intelligent Robots and Systems (IROS), 2024, pp. 6840-6847</em>
+        </p>
+        <p class="publication-links">
+          <a href="https://ieeexplore.ieee.org/document/10802433" target="_blank">[Paper]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2023" data-topic="Legged Locomotion & Mobility" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/locomotion_2.png" alt="Agile and Versatile Robot Locomotion via Kernel-based Residual Learning">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://ieeexplore.ieee.org/document/10160704" target="_blank">Agile and Versatile Robot Locomotion via Kernel-based Residual Learning</a></h4>
+        <p class="publication-authors">
+          Carroll, M., Liu, Z., Kasaei, M., & Li, Z.
+        </p>
+        <p class="publication-venue">
+          <em>IEEE International Conference on Robotics and Automation (ICRA), 2023, pp. 5148-5154</em>
+        </p>
+        <p class="publication-links">
+          <a href="https://ieeexplore.ieee.org/document/10160704" target="_blank">[Paper]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2022" data-topic="Legged Locomotion & Mobility" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/locomotion_3.png" alt="Real-time Digital Double Framework to Predict Collapsible Terrains for Legged Robots">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://ieeexplore.ieee.org/document/9981613" target="_blank">Real-time Digital Double Framework to Predict Collapsible Terrains for Legged Robots</a></h4>
+        <p class="publication-authors">
+          Haddeler, G., Palanivelu, H. P., Ng, Y. C., Colonnier, F., Adiwahono, A. H., Li, Z., ... Chuah, M. Y.
+        </p>
+        <p class="publication-venue">
+          <em>IEEE International Conference on Intelligent Robots and Systems (IROS), 2022, pp. 10387-10394</em>
+        </p>
+        <p class="publication-links">
+          <a href="https://ieeexplore.ieee.org/document/9981613" target="_blank">[Paper]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2022" data-topic="Legged Locomotion & Mobility" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/locomotion_4.png" alt="Accessibility-Based Clustering for Efficient Learning of Locomotion Skills">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://ieeexplore.ieee.org/document/9812113" target="_blank">Accessibility-Based Clustering for Efficient Learning of Locomotion Skills</a></h4>
+        <p class="publication-authors">
+          Zhang, C., Yu, W., & Li, Z.
+        </p>
+        <p class="publication-venue">
+          <em>IEEE International Conference on Robotics and Automation (ICRA), 2022, pp. 1600-1606</em>
+        </p>
+        <p class="publication-links">
+          <a href="https://ieeexplore.ieee.org/document/9812113" target="_blank">[Paper]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2022" data-topic="Legged Locomotion & Mobility" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/locomotion_5.png" alt="Learning Motor Skills of Reactive Reaching and Grasping of Objects">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://ieeexplore.ieee.org/document/9739420" target="_blank">Learning Motor Skills of Reactive Reaching and Grasping of Objects</a></h4>
+        <p class="publication-authors">
+          Hu, W., Yang, C., Yuan, K., & Li, Z.
+        </p>
+        <p class="publication-venue">
+          <em>IEEE International Conference on Robotics and Biomimetics (ROBIO), 2021, pp. 452-457</em>
+        </p>
+        <p class="publication-links">
+          <a href="https://ieeexplore.ieee.org/document/9739420" target="_blank">[Paper]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2022" data-topic="Legged Locomotion & Mobility" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/locomotion_6.png" alt="Learning Autonomous Mobility Using Real Demonstration Data">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://ieeexplore.ieee.org/document/9659394" target="_blank">Learning Autonomous Mobility Using Real Demonstration Data</a></h4>
+        <p class="publication-authors">
+          Gu, J., & Li, Z.
+        </p>
+        <p class="publication-venue">
+          <em>20th International Conference on Advanced Robotics (ICAR), 2021, pp. 428-434</em>
+        </p>
+        <p class="publication-links">
+          <a href="https://ieeexplore.ieee.org/document/9659394" target="_blank">[Paper]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2021" data-topic="Legged Locomotion & Mobility" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/locomotion_7.png" alt="Optimisation of body-ground contact for augmenting the whole-body loco-manipulation of quadruped robots">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://ieeexplore.ieee.org/document/9341498" target="_blank">Optimisation of body-ground contact for augmenting the whole-body loco-manipulation of quadruped robots</a></h4>
+        <p class="publication-authors">
+          Wolfslag, W. J., McGreavy, C., Xin, G., Tiseo, C., Vijayakumar, S., & Li, Z.
+        </p>
+        <p class="publication-venue">
+          <em>IEEE International Conference on Intelligent Robots and Systems (IROS), 2021, pp. 3694-3701</em>
+        </p>
+        <p class="publication-links">
+          <a href="https://ieeexplore.ieee.org/document/9341498" target="_blank">[Paper]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2021" data-topic="Legged Locomotion & Mobility" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/locomotion_8.png" alt="Meta-Reinforcement Learning for Adaptive Motor Control in Changing Robot Dynamics and Environments">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://arxiv.org/abs/2101.07599" target="_blank">Meta-Reinforcement Learning for Adaptive Motor Control in Changing Robot Dynamics and Environments</a></h4>
+        <p class="publication-authors">
+          Anne, T., Wilkinson, J., & Li, Z.
+        </p>
+        <p class="publication-venue">
+          <em>arXiv, 2021</em>
+        </p>
+        <p class="publication-links">
+          <a href="https://arxiv.org/abs/2101.07599" target="_blank">[Paper]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2020" data-topic="Legged Locomotion & Mobility" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/locomotion_9.png" alt="Variable Autonomy of Whole-body Control for Inspection and Intervention in Industrial Environments using Legged Robots">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://ieeexplore.ieee.org/document/9216813" target="_blank">Variable Autonomy of Whole-body Control for Inspection and Intervention in Industrial Environments using Legged Robots</a></h4>
+        <p class="publication-authors">
+          Xin, G., Tiseo, C., Wolfslag, W., Smith, J., Cebe, O., Li, Z., ... Mistry, M.
+        </p>
+        <p class="publication-venue">
+          <em>IEEE International Conference on Automation Science and Engineering (CASE), 2020, pp. 1415-1420</em>
+        </p>
+        <p class="publication-links">
+          <a href="https://ieeexplore.ieee.org/document/9216813" target="_blank">[Paper]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+  &copy; 2025 Your Name. Powered by Bootstrap. Hosted on GitHub Pages.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const showSelectedBtn = document.getElementById('show-selected');
+    const sortByDateBtn = document.getElementById('sort-by-date');
+    const topicFilters = document.querySelectorAll('.topic-filter');
+    const publicationsList = document.getElementById('publications-list');
+    
+    const originalPublications = Array.from(publicationsList.getElementsByClassName('publication-entry'));
+
+    let currentSort = 'selected';
+    let currentTopic = 'all';
+
+    function updatePublications() {
+        // Re-order DOM elements based on the current sort method
+        let sortedPubs = [...originalPublications];
+        if (currentSort === 'date') {
+            sortedPubs.sort((a, b) => parseInt(b.dataset.year, 10) - parseInt(a.dataset.year, 10));
+        } else { // 'selected' sort restores original order
+            sortedPubs.sort((a, b) => originalPublications.indexOf(a) - originalPublications.indexOf(b));
+        }
+        // Append sorted elements to apply the new order
+        sortedPubs.forEach(pub => publicationsList.appendChild(pub));
+
+        // Toggle visibility based on combined filters
+        originalPublications.forEach(pub => {
+            const isTopicMatch = (currentTopic === 'all' || pub.dataset.topic === currentTopic);
+            const isSelectedMatch = (currentSort !== 'selected' || pub.dataset.selected === 'true');
+
+            if (isTopicMatch && isSelectedMatch) {
+                pub.style.display = 'flex';
+            } else {
+                pub.style.display = 'none';
+            }
+        });
+    }
+
+    // Event Listeners for main sort controls
+    showSelectedBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        currentSort = 'selected';
+        updatePublications();
+    });
+
+    sortByDateBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        currentSort = 'date';
+        updatePublications();
+    });
+
+    // Event Listeners for topic filters
+    topicFilters.forEach(filter => {
+        filter.addEventListener('click', function(e) {
+            e.preventDefault();
+            currentTopic = this.dataset.topic;
+            updatePublications();
+        });
+    });
+
+    // Initial view
+    updatePublications();
+});
+</script>
+</body>
+</html> 

@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Alex Li</title>
+  <!-- icon！ -->
+  <link rel="icon" type="image/png" href="imgs/image.png"> 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <style>
     body {
@@ -30,6 +32,64 @@
       font-size: 0.9rem;
       color: #666;
     }
+    .publication-entry {
+      margin-bottom: 2.5rem;
+    }
+    .publication-entry .col-md-3 {
+        text-align: center;
+    }
+    .publication-entry img {
+        max-width: 100%;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    .publication-entry h4 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-bottom: 0.3rem;
+    }
+    .publication-entry h4 a {
+        color: #2c5aa2;
+        text-decoration: none;
+    }
+    .publication-entry h4 a:hover {
+        text-decoration: underline;
+    }
+    .publication-entry p {
+        margin-bottom: 0.25rem;
+        line-height: 1.4;
+    }
+    .publication-authors {
+        font-size: 0.95rem;
+    }
+    .publication-venue {
+        font-size: 0.95rem;
+    }
+    .publication-links a {
+        margin-right: 10px;
+    }
+    .publication-award {
+        color: #b54a4a;
+        font-weight: bold;
+        font-size: 0.95rem;
+    }
+    .publication-filters, .publication-topics {
+        color: #555;
+        font-size: 0.9rem;
+    }
+    .publication-filters a, .publication-topics a {
+        color: #2c5aa2;
+        text-decoration: none;
+    }
+    .publication-filters a:hover, .publication-topics a:hover {
+        text-decoration: underline;
+    }
+    .publication-topics {
+        margin-top: -0.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 1.5rem;
+    }
   </style>
 </head>
 <body>
@@ -44,8 +104,8 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link active" href="#">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Publication</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Group</a></li>
+        <li class="nav-item"><a class="nav-link" href="publication.html">Publication</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://groups.inf.ed.ac.uk/advr/people.html">Lab</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
       </ul>
     </div>
@@ -56,20 +116,20 @@
 <div class="container">
   <div class="row">
     <div class="col-md-8">
-      <h1>Alex Li✨</h1>
+      <h1>Alex Li</h1>
       <p><strong>Email:</strong> your.email@example.com</p>
-      <p>I am a [Your Title] at [Your Institution]. My research focuses on [Your Research Interests], aiming to [goal or impact statement].</p>
-      <p>I received my [degree] from [University] in [year], working on [topic] under [advisor].</p>
+      <p>I am an Associate Professor of Robotics and AI at <a href="https://www.ucl.ac.uk/">University College London</a>, where I lead the <a href="https://groups.inf.ed.ac.uk/advr/people.html">Advanced Intelligent Robotics Lab</a>. I received my Ph.D. in Robotics from the <a href="https://unige.it/en">University of Genova</a> and the <a href="https://www.iit.it/en"></a>Italian Institute of Technology</a>, and previously held faculty and research positions at the <a href="https://www.ed.ac.uk/">University of Edinburgh</a> and <a href="https://www.iit.it/en">Italian Institute of Technology</a>.</p>
+      <p>My research focuses on Embodied AI, robot learning, and intelligent control, with the goal of enabling robots to perform complex manipulation and locomotion tasks in real-world environments. I am particularly interested in combining deep reinforcement learning, vision-language models, and multi-agent systems to develop autonomous systems with human-level adaptability and beyond.</p>
+      <p>My work has been published in Science Robotics and Nature Machine Intelligence, and has been featured by BBC News, Wired, New Scientist, and TechXplore. I also serve as an Associate Editor for IEEE journals and actively engage in national robotics initiatives.</p>
       <p>
         <a href="https://scholar.google.com/citations?user=PrJjrjIAAAAJ&hl=en">Google Scholar</a> /
-        <a href="#">GitHub</a> /
+        <a href="https://www.youtube.com/@Alebotics">YoTube</a> /
         <a href="#">LinkedIn</a> /
-        <a href="#">YoTube</a> /
-
+        <!-- <a href="#">GitHub</a> / -->
       </p>
     </div>
     <div class="col-md-4">
-      <img src="alex.png" alt="Your Name" class="profile-img">
+      <img src="imgs/zhibin.png" alt="Your Name" class="profile-img">
     </div>
   </div>
 
@@ -79,19 +139,114 @@
     <li><strong>Dec 2024</strong> – Invited talk at Robotics Workshop.</li>
   </ul>
 
-  <h2>Selected Publications📖</h2>
-  <ul>
-    <li><strong>Title:</strong> Amazing Paper<br>
-      <em>Author1, Your Name, Author3</em><br>
-      <a href="#">[PDF]</a> <a href="#">[Video]</a>
-    </li>
-  </ul>
+  <h2>Selected Publications📖 <a href="publication.html" style="font-size:1rem; font-weight:normal; margin-left:1em;">[All Publications]</a></h2>
+ 
+  <div id="publications-list">
+    <div class="publication-entry row" data-year="2023" data-topic="Generative Models" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/placeholder.png" alt="Hierarchical generative modelling for autonomous robots">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://www.nature.com/articles/s42256-023-00752-z" target="_blank">Hierarchical Generative Modelling for Autonomous Robots</a></h4>
+        <p class="publication-authors">
+          Kai Yuan, Noor Sajid, Karl Friston, <strong>Zhibin Li†</strong>
+        </p>
+        <p class="publication-venue">
+          <em>Nature Machine Intelligence</em>, Vol 5, 1402–1414, 2023
+        </p>
+        <p class="publication-links">
+          <a href="https://www.nature.com/articles/s42256-023-00752-z" target="_blank">[Paper]</a>
+          <a href="#" target="_blank">[Project Page]</a>
+          <a href="#" target="_blank">[Code]</a>
+          <a href="#" target="_blank">[Video]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2023" data-topic="Robot Manipulation" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/placeholder.png" alt="Hybrid hierarchical learning for complex robotic tasks">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://www.nature.com/articles/s42256-023-00709-2" target="_blank">RObotic MAnipulation Network (RO-MAN): Hybrid Hierarchical Learning for Solving Complex Sequential Tasks</a></h4>
+        <p class="publication-authors">
+          Eleftherios Triantafyllidis, Fernando Acero, Zhaocheng Liu, <strong>Zhibin Li†</strong>
+        </p>
+        <p class="publication-venue">
+          <em>Nature Machine Intelligence</em>, Vol 5, 991–1005, 2023
+        </p>
+        <p class="publication-links">
+          <a href="https://www.nature.com/articles/s42256-023-00709-2" target="_blank">[Paper]</a>
+          <a href="#" target="_blank">[Project Page]</a>
+          <a href="#" target="_blank">[Code]</a>
+          <a href="#" target="_blank">[Video]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2023" data-topic="Locomotion Learning" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/placeholder.png" alt="Sensory feedback in robot locomotion learning">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://www.nature.com/articles/s42256-023-00701-w" target="_blank">Identifying Important Sensory Feedback for Learning Locomotion Skills</a></h4>
+        <p class="publication-authors">
+          Wanming Yu, Chuanyu Yang, Christopher McGreavy, Eleftherios Triantafyllidis, Guillaume Bellegarda, Milad Shafiee, Auke Jan Ijspeert, <strong>Zhibin Li†</strong>
+        </p>
+        <p class="publication-venue">
+          <em>Nature Machine Intelligence</em>, Vol 5, 919–932, 2023
+        </p>
+        <p class="publication-links">
+          <a href="https://www.nature.com/articles/s42256-023-00701-w" target="_blank">[Paper]</a>
+          <a href="#" target="_blank">[Project Page]</a>
+          <a href="#" target="_blank">[Code]</a>
+          <a href="#" target="_blank">[Video]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
+    <div class="publication-entry row" data-year="2020" data-topic="Legged Locomotion" data-selected="true">
+      <div class="col-md-3">
+        <img src="imgs/placeholder.png" alt="Multi-expert learning for legged locomotion">
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://www.science.org/doi/10.1126/scirobotics.abb2174" target="_blank">Multi-Expert Learning of Adaptive Legged Locomotion</a></h4>
+        <p class="publication-authors">
+          Chuanyu Yang, Kai Yuan, Wanming Yu, Qiuguo Zhu, <strong>Zhibin Li†</strong>
+        </p>
+        <p class="publication-venue">
+          <em>Science Robotics</em>, Vol 5 (49), 2020
+        </p>
+        <p class="publication-links">
+          <a href="https://www.science.org/doi/10.1126/scirobotics.abb2174" target="_blank">[Paper]</a>
+          <a href="#" target="_blank">[Project Page]</a>
+          <a href="#" target="_blank">[Code]</a>
+          <a href="#" target="_blank">[Video]</a>
+        </p>
+        <p class="publication-award">
+          Featured by BBC, Wired, and New Scientist
+        </p>
+      </div>
+    </div>
+  </div>
 
-  <h2>Selected Talks🎙️</h2>
+  <h2>Selected Talks 🎙️</h2>
   <ul>
-    <li><strong>2025 Mar</strong> – Keynote at XYZ Conference</li>
-    <li><strong>2024 Nov</strong> – Guest Lecture at ABC University</li>
+    <li><strong>2023 Jan</strong> – Invited talk at 4th UK Manipulation Workshop: <em>"Learning Adaptive Motor Skills for Dexterous Manipulation and Grasping"</em></li>
+    <li><strong>2021 Oct</strong> – Invited talk at IROS Workshop on Advances in Space Robotics: <em>"Human-Centered Teleoperation for Space Robotics"</em></li>
+    <li><strong>2021 Sep</strong> – Public talk at FAIR-SPACE/ORCA UK RAI Hub Webinar: <em>"Remote bimanual manipulation and evaluation of operator’s mental load and performance during teleoperation"</em></li>
+    <li><strong>2021 Sep</strong> – Talk at Queen Mary University of London: <em>"Learning motor skills for robot locomotion and manipulation"</em></li>
+    <li><strong>2021 Jul</strong> – Talk at Tsinghua University: <em>"Prospects of control and movement skills for robot locomotion"</em></li>
+    <li><strong>2021 Jun</strong> – Talk at A*STAR Singapore: <em>"State of the art of legged locomotion and future directions"</em></li>
+    <li><strong>2021 May</strong> – Public talk at KTN Robotics & AI Showcase: <em>"Haptic teleoperation for dexterous manipulation with variable autonomy and its future impact in the post-COVID era"</em></li>
+    <li><strong>2019 Oct</strong> – Talk at Cardiff Centre for Artificial Intelligence & Robotics: <em>"Machine learning for autonomous machines"</em></li>
+    <li><strong>2019</strong> – Keynote at International Conference on Intelligent Robotics and Applications: <em>"From automation to learned autonomy – A new era for intelligent robots"</em></li>
+    <li><strong>2018 Sep</strong> – Workshop at Royal Society of Edinburgh: <em>"Dynamic motion of robots: from controlled movements to learned behaviours"</em></li>
+    <li><strong>2018 Apr</strong> – Talk at A*STAR Singapore: <em>"Advancement and challenges in robot control and motion planning: from locomotion to manipulation"</em></li>
+    <li><strong>2017 Nov</strong> – Franco–Scottish Seminar, Royal Society of Edinburgh: <em>"Reaching the unreachable: science of robot locomotion"</em></li>
+    <li><strong>2016 May</strong> – Talk at ICRA Conference: <em>"Online Detection of Balance Status of Legged Robots towards Versatile Whole-body Locomotion"</em></li>
   </ul>
+  
 
   <h2>Honors👑</h2>
   <ul>
@@ -102,7 +257,7 @@
 
 <!-- Footer -->
 <footer>
-  &copy; 2025 Your Name. Powered by Bootstrap. Hosted on GitHub Pages.
+  &copy; 2025 Alex Li. Powered by Bootstrap. Hosted on GitHub Pages.
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
