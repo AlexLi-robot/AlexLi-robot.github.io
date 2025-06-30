@@ -37,17 +37,9 @@
     }
     .publication-entry .col-md-3 {
         text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 200px;
     }
     .publication-entry img {
         max-width: 100%;
-        max-height: 180px;
-        width: auto;
-        height: auto;
-        object-fit: contain;
         border: 1px solid #ddd;
         border-radius: 4px;
     }
@@ -98,6 +90,14 @@
         border-bottom: 1px solid #eee;
         margin-bottom: 1.5rem;
     }
+    .publication-entry .col-md-3 {
+        text-align: center;
+    }
+    .publication-entry img {
+        max-width: 100%;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
   </style>
 </head>
 <body>
@@ -139,6 +139,30 @@
   </p>
 
   <div id="publications-list">
+<!--     
+    <div class="publication-entry row" data-year="2024" data-topic="Manipulation" data-selected="true">
+      <div class="col-md-3">
+        <video autoplay muted loop playsinline>
+          <source src="imgs/paper_assets/dexskills_demo.mp4" type="video/mp4">
+          <img src="imgs/paper_assets/cover5.png" alt="DexSkills: Skill Segmentation Using Haptic Data">
+        </video>
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://arxiv.org/pdf/2405.03476" target="_blank">DexSkills: Skill Segmentation Using Haptic Data for Learning Autonomous Long-Horizon Robotic Manipulation Tasks</a></h4>
+        <p class="publication-authors">
+          Xiaofeng Mao, Gabriele Giudici, Claudio Coppola, Kaspar Althoefer, Ildar Farkhatdinov, <strong>Zhibin Li†</strong>, Lorenzo Jamone
+        </p>
+        <p class="publication-venue">
+          <em><b>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</b></em>, 2024
+        </p>
+        <p class="publication-links">
+          <a href="https://arxiv.org/pdf/2405.03476" target="_blank">[Paper]</a>
+          <a href="https://github.com/ARQ-CRISP/DexSkills" target="_blank">[Code]</a>
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div> -->
+
     <div class="publication-entry row" data-year="2023" data-topic="Science Robotics & Nature Machine Intelligence" data-selected="true">
       <div class="col-md-3">
         <img src="imgs/paper_assets/cover1.png" alt="Hierarchical generative modelling for autonomous robots">
@@ -160,6 +184,7 @@
         <p class="publication-award"></p>
       </div>
     </div>
+
     <div class="publication-entry row" data-year="2023" data-topic="Science Robotics & Nature Machine Intelligence" data-selected="true">
       <div class="col-md-3">
         <img src="imgs/paper_assets/cover2.png" alt="Hybrid hierarchical learning for complex robotic tasks">
@@ -181,6 +206,7 @@
         <p class="publication-award"></p>
       </div>
     </div>
+
     <div class="publication-entry row" data-year="2023" data-topic="Locomotion Learning" data-selected="true">
       <div class="col-md-3">
         <img src="imgs/paper_assets/cover4.png" alt="Sensory feedback in robot locomotion learning">
@@ -202,6 +228,7 @@
         <p class="publication-award"></p>
       </div>
     </div>
+
     <div class="publication-entry row" data-year="2020" data-topic="Science Robotics & Nature Machine Intelligence" data-selected="true">
       <div class="col-md-3">
         <img src="imgs/paper_assets/cover3.png" alt="Multi-expert learning for legged locomotion">
@@ -225,28 +252,34 @@
         </p>
       </div>
     </div>
+    
+
     <!-- Dexerous Hands & Tactile Manipulation -->
     <div class="publication-entry row" data-year="2024" data-topic="Dexterous Hands & Tactile Manipulation" data-selected="true">
       <div class="col-md-3">
-        <img src="imgs/tactile_1.png" alt="Efficient Tactile Sensing-based Learning for Dual-arm Fine Pinch-Grasp Skills">
+        <img src="imgs/dex1.png" alt="Efficient Tactile Sensing-based Learning for Dual-arm Fine Pinch-Grasp Skills">
       </div>
       <div class="col-md-9">
         <h4><a href="https://ieeexplore.ieee.org/document/10802651" target="_blank">Efficient Tactile Sensing-based Learning from Limited Real-world Demonstrations for Dual-arm Fine Pinch-Grasp Skills</a></h4>
         <p class="publication-authors">
-          Mao, X., Xu, Y., Wen, R., Kasaei, M., Yu, W., Psomopoulou, E., ... Li, Z.
-        </p>
+          Xiaofeng Mao, Yucheng Xu, Ruoshi Wen, Mohammadreza Kasaei, Wanming Yu, Efi Psomopoulou, Nathan F. Lepora, Zhibin Li
+                </p>
         <p class="publication-venue">
           <em>IEEE/RSJ IROS, 2024, pp. 5112-5119</em>
         </p>
         <p class="publication-links">
           <a href="https://ieeexplore.ieee.org/document/10802651" target="_blank">[Paper]</a>
+          <a href="https://www.youtube.com/watch?v=BlzxGgiKfck"  target="_blank">[Video]</a>
         </p>
         <p class="publication-award"></p>
       </div>
     </div>
+
+
+
     <div class="publication-entry row" data-year="2023" data-topic="Dexterous Hands & Tactile Manipulation" data-selected="true">
       <div class="col-md-3">
-        <img src="imgs/tactile_2.png" alt="Dexterous In-Hand Manipulation of Slender Cylindrical Objects">
+        <img src="imgs/dex2.png" alt="Dexterous In-Hand Manipulation of Slender Cylindrical Objects">
       </div>
       <div class="col-md-9">
         <h4><a href="http://arxiv.org/abs/2304.05141v1" target="_blank">Dexterous In-Hand Manipulation of Slender Cylindrical Objects through Deep Reinforcement Learning with Tactile Sensing</a></h4>
@@ -262,9 +295,11 @@
         <p class="publication-award"></p>
       </div>
     </div>
+
+
     <div class="publication-entry row" data-year="2022" data-topic="Dexterous Hands & Tactile Manipulation" data-selected="true">
       <div class="col-md-3">
-        <img src="imgs/tactile_3.png" alt="Learning Adaptive Grasping From Human Demonstrations">
+        <img src="imgs/dex3.png" alt="Learning Adaptive Grasping From Human Demonstrations">
       </div>
       <div class="col-md-9">
         <h4><a href="https://ieeexplore.ieee.org/document/9714723" target="_blank">Learning Adaptive Grasping From Human Demonstrations</a></h4>
@@ -280,9 +315,13 @@
         <p class="publication-award"></p>
       </div>
     </div>
+
+
+
+
     <div class="publication-entry row" data-year="2024" data-topic="Manipulation" data-selected="true">
       <div class="col-md-3">
-        <img src="imgs/manipulation_2.png" alt="Neural ODE-based Imitation Learning (NODE-IL): Data-Efficient Imitation Learning for Long-Horizon Multi-Skill Robot Manipulation">
+        <img src="imgs/man1.png" alt="Neural ODE-based Imitation Learning (NODE-IL): Data-Efficient Imitation Learning for Long-Horizon Multi-Skill Robot Manipulation">
       </div>
       <div class="col-md-9">
         <h4><a href="https://ieeexplore.ieee.org/document/10802736" target="_blank">Neural ODE-based Imitation Learning (NODE-IL): Data-Efficient Imitation Learning for Long-Horizon Multi-Skill Robot Manipulation</a></h4>
@@ -298,9 +337,11 @@
         <p class="publication-award"></p>
       </div>
     </div>
+
+  
     <div class="publication-entry row" data-year="2024" data-topic="Manipulation" data-selected="true">
       <div class="col-md-3">
-        <img src="imgs/manipulation_3.png" alt="DexSkills: Skill Segmentation Using Haptic Data for Learning Autonomous Long-Horizon Robotic Manipulation Tasks">
+        <img src="imgs/man2.png" alt="DexSkills: Skill Segmentation Using Haptic Data for Learning Autonomous Long-Horizon Robotic Manipulation Tasks">
       </div>
       <div class="col-md-9">
         <h4><a href="https://ieeexplore.ieee.org/document/10802807" target="_blank">DexSkills: Skill Segmentation Using Haptic Data for Learning Autonomous Long-Horizon Robotic Manipulation Tasks</a></h4>
@@ -316,9 +357,11 @@
         <p class="publication-award"></p>
       </div>
     </div>
+
+
     <div class="publication-entry row" data-year="2024" data-topic="Manipulation" data-selected="true">
       <div class="col-md-3">
-        <img src="imgs/manipulation_4.png" alt="Intrinsic Language-Guided Exploration for Complex Long-Horizon Robotic Manipulation Tasks">
+        <img src="imgs/man3.png" alt="Intrinsic Language-Guided Exploration for Complex Long-Horizon Robotic Manipulation Tasks">
       </div>
       <div class="col-md-9">
         <h4><a href="https://ieeexplore.ieee.org/document/10611483" target="_blank">Intrinsic Language-Guided Exploration for Complex Long-Horizon Robotic Manipulation Tasks</a></h4>
@@ -334,9 +377,11 @@
         <p class="publication-award"></p>
       </div>
     </div>
+
+
     <div class="publication-entry row" data-year="2023" data-topic="Manipulation" data-selected="true">
       <div class="col-md-3">
-        <img src="imgs/manipulation_5.png" alt="Modular Neural Network Policies for Learning In-Flight Object Catching with a Robot Hand-Arm System">
+        <img src="imgs/man4.png" alt="Modular Neural Network Policies for Learning In-Flight Object Catching with a Robot Hand-Arm System">
       </div>
       <div class="col-md-9">
         <h4><a href="https://ieeexplore.ieee.org/document/10341463" target="_blank">Modular Neural Network Policies for Learning In-Flight Object Catching with a Robot Hand-Arm System</a></h4>
@@ -352,9 +397,11 @@
         <p class="publication-award"></p>
       </div>
     </div>
+
+
     <div class="publication-entry row" data-year="2023" data-topic="Manipulation" data-selected="true">
       <div class="col-md-3">
-        <img src="imgs/manipulation_6.png" alt="Run and Catch: Dynamic Object-Catching of Quadrupedal Robots">
+        <img src="imgs/man5.png" alt="Run and Catch: Dynamic Object-Catching of Quadrupedal Robots">
       </div>
       <div class="col-md-9">
         <h4><a href="https://ieeexplore.ieee.org/document/10341977" target="_blank">Run and Catch: Dynamic Object-Catching of Quadrupedal Robots</a></h4>
@@ -370,9 +417,11 @@
         <p class="publication-award"></p>
       </div>
     </div>
+
+
     <div class="publication-entry row" data-year="2023" data-topic="Manipulation" data-selected="true">
       <div class="col-md-3">
-        <img src="imgs/manipulation_7.png" alt="Language-guided Robot Grasping: CLIP-based Referring Grasp Synthesis in Clutter">
+        <img src="imgs/man6.png" alt="Language-guided Robot Grasping: CLIP-based Referring Grasp Synthesis in Clutter">
       </div>
       <div class="col-md-9">
         <h4><a href="https://proceedings.mlr.press/v229/tziafas23a.html" target="_blank">Language-guided Robot Grasping: CLIP-based Referring Grasp Synthesis in Clutter</a></h4>
@@ -390,25 +439,7 @@
     </div>
     <div class="publication-entry row" data-year="2023" data-topic="Manipulation" data-selected="true">
       <div class="col-md-3">
-        <img src="imgs/manipulation_8.png" alt="Learning Fine Pinch-Grasp Skills using Tactile Sensing from A Few Real-world Demonstrations">
-      </div>
-      <div class="col-md-9">
-        <h4><a href="http://arxiv.org/abs/2307.04619v2" target="_blank">Learning Fine Pinch-Grasp Skills using Tactile Sensing from A Few Real-world Demonstrations</a></h4>
-        <p class="publication-authors">
-          Mao, X., Xu, Y., Wen, R., Kasaei, M., Yu, W., Psomopoulou, E., ... Li, Z.
-        </p>
-        <p class="publication-venue">
-          <em>arXiv, 2023</em>
-        </p>
-        <p class="publication-links">
-          <a href="http://arxiv.org/abs/2307.04619v2" target="_blank">[Paper]</a>
-        </p>
-        <p class="publication-award"></p>
-      </div>
-    </div>
-    <div class="publication-entry row" data-year="2023" data-topic="Manipulation" data-selected="true">
-      <div class="col-md-3">
-        <img src="imgs/manipulation_9.png" alt="Instance-wise Grasp Synthesis for Robotic Grasping">
+        <img src="imgs/man7.png" alt="Instance-wise Grasp Synthesis for Robotic Grasping">
       </div>
       <div class="col-md-9">
         <h4><a href="https://ieeexplore.ieee.org/document/10161149" target="_blank">Instance-wise Grasp Synthesis for Robotic Grasping</a></h4>
@@ -420,13 +451,14 @@
         </p>
         <p class="publication-links">
           <a href="https://ieeexplore.ieee.org/document/10161149" target="_blank">[Paper]</a>
+          <a href="https://youtu.be/riBXMgrupUw" target="_blank">[Video]</a>
         </p>
         <p class="publication-award"></p>
       </div>
     </div>
     <div class="publication-entry row" data-year="2023" data-topic="Manipulation" data-selected="true">
       <div class="col-md-3">
-        <img src="imgs/manipulation_10.png" alt="Data-efficient Non-parametric Modelling and Control of an Extensible Soft Manipulator">
+        <img src="imgs/man8.png" alt="Data-efficient Non-parametric Modelling and Control of an Extensible Soft Manipulator">
       </div>
       <div class="col-md-9">
         <h4><a href="https://ieeexplore.ieee.org/document/10161275" target="_blank">Data-efficient Non-parametric Modelling and Control of an Extensible Soft Manipulator</a></h4>
@@ -444,7 +476,7 @@
     </div>
     <div class="publication-entry row" data-year="2023" data-topic="Manipulation" data-selected="true">
       <div class="col-md-3">
-        <img src="imgs/manipulation_11.png" alt="A Data-efficient Neural ODE Framework for Optimal Control of Soft Manipulators">
+        <img src="imgs/man9.png" alt="A Data-efficient Neural ODE Framework for Optimal Control of Soft Manipulators">
       </div>
       <div class="col-md-9">
         <h4><a href="https://proceedings.mlr.press/v229/kasaei23a.html" target="_blank">A Data-efficient Neural ODE Framework for Optimal Control of Soft Manipulators</a></h4>
@@ -456,13 +488,15 @@
         </p>
         <p class="publication-links">
           <a href="https://proceedings.mlr.press/v229/kasaei23a.html" target="_blank">[Paper]</a>
+          <a href="https://youtu.be/6tYS-5tkoQg" target="_blank">[Video]</a>
         </p>
         <p class="publication-award"></p>
       </div>
     </div>
+
     <div class="publication-entry row" data-year="2020" data-topic="Manipulation" data-selected="true">
       <div class="col-md-3">
-        <img src="imgs/manipulation_12.png" alt="Learning Pregrasp Manipulation of Objects from Ungraspable Poses">
+        <img src="imgs/man10.png" alt="Learning Pregrasp Manipulation of Objects from Ungraspable Poses">
       </div>
       <div class="col-md-9">
         <h4><a href="https://ieeexplore.ieee.org/document/9196982" target="_blank">Learning Pregrasp Manipulation of Objects from Ungraspable Poses</a></h4>
@@ -474,16 +508,19 @@
         </p>
         <p class="publication-links">
           <a href="https://ieeexplore.ieee.org/document/9196982" target="_blank">[Paper]</a>
+          <a href="https://youtu.be/o7L2nE8dwQM" target="_blank">[Video]</a>
         </p>
         <p class="publication-award"></p>
       </div>
     </div>
+
+
     <div class="publication-entry row" data-year="2023" data-topic="Teleoperation" data-selected="true">
       <div class="col-md-3">
-        <img src="imgs/teleoperation_1.png" alt="Feasibility Retargeting for Multi-contact Teleoperation and Physical Interaction">
+        <img src="imgs/tele1.png" alt="Feasibility Retargeting for Multi-contact Teleoperation and Physical Interaction">
       </div>
       <div class="col-md-9">
-        <h4><a href="http://dx.doi.org/10.1109/tmech.2022.3152844/mm2" target="_blank">Feasibility Retargeting for Multi-contact Teleoperation and Physical Interaction</a></h4>
+        <h4><a href="https://arxiv.org/abs/2308.03479" target="_blank">Feasibility Retargeting for Multi-contact Teleoperation and Physical Interaction</a></h4>
         <p class="publication-authors">
           Rouxel, Q., Wen, R., Li, Z., Tiseo, C., Mouret, J.-B., & Ivaldi, S.
         </p>
@@ -491,14 +528,18 @@
           <em>2023</em>
         </p>
         <p class="publication-links">
-          <a href="http://dx.doi.org/10.1109/tmech.2022.3152844/mm2" target="_blank">[Paper]</a>
+          <a href="https://arxiv.org/abs/2308.03479" target="_blank">[Paper]</a>
+          <a href="https://ieeexplore.ieee.org/ielx7/3516/9924619/9728754/supp1-3152844.mp4?arnumber=9728754" target="_blank">[Video]</a>
+
         </p>
         <p class="publication-award"></p>
       </div>
     </div>
+
+
     <div class="publication-entry row" data-year="2021" data-topic="Teleoperation" data-selected="true">
       <div class="col-md-3">
-        <img src="imgs/teleoperation_2.png" alt="Robust High-Transparency Haptic Exploration for Dexterous Telemanipulation">
+        <img src="imgs/tele2.png" alt="Robust High-Transparency Haptic Exploration for Dexterous Telemanipulation">
       </div>
       <div class="col-md-9">
         <h4><a href="https://ieeexplore.ieee.org/document/9561968" target="_blank">Robust High-Transparency Haptic Exploration for Dexterous Telemanipulation</a></h4>
@@ -514,9 +555,10 @@
         <p class="publication-award"></p>
       </div>
     </div>
+
     <div class="publication-entry row" data-year="2021" data-topic="Teleoperation" data-selected="true">
       <div class="col-md-3">
-        <img src="imgs/teleoperation_3.png" alt="Considerations and Challenges of Measuring Operator Performance in Telepresence and Teleoperation Entailing Mixed Reality Technologies">
+        <img src="imgs/tele3.png" alt="Considerations and Challenges of Measuring Operator Performance in Telepresence and Teleoperation Entailing Mixed Reality Technologies">
       </div>
       <div class="col-md-9">
         <h4><a href="http://arxiv.org/abs/2103.12702v2" target="_blank">Considerations and Challenges of Measuring Operator Performance in Telepresence and Teleoperation Entailing Mixed Reality Technologies</a></h4>
@@ -532,9 +574,10 @@
         <p class="publication-award"></p>
       </div>
     </div>
+
     <div class="publication-entry row" data-year="2022" data-topic="Teleoperation" data-selected="true">
       <div class="col-md-3">
-        <img src="imgs/teleoperation_4.png" alt="Haptic Bimanual System for Teleoperation of Time-Delayed Tasks">
+        <img src="imgs/tele4.png" alt="Haptic Bimanual System for Teleoperation of Time-Delayed Tasks">
       </div>
       <div class="col-md-9">
         <h4><a href="https://ieeexplore.ieee.org/document/9739628" target="_blank">Haptic Bimanual System for Teleoperation of Time-Delayed Tasks</a></h4>
@@ -550,9 +593,12 @@
         <p class="publication-award"></p>
       </div>
     </div>
+
+
+
     <div class="publication-entry row" data-year="2024" data-topic="Legged Locomotion & Mobility" data-selected="true">
       <div class="col-md-3">
-        <img src="imgs/locomotion_1.png" alt="Distilling Reinforcement Learning Policies for Interpretable Robot Locomotion: Gradient Boosting Machines and Symbolic Regression">
+        <img src="imgs/loco2png" alt="Distilling Reinforcement Learning Policies for Interpretable Robot Locomotion: Gradient Boosting Machines and Symbolic Regression">
       </div>
       <div class="col-md-9">
         <h4><a href="https://ieeexplore.ieee.org/document/10802433" target="_blank">Distilling Reinforcement Learning Policies for Interpretable Robot Locomotion: Gradient Boosting Machines and Symbolic Regression</a></h4>
@@ -567,10 +613,12 @@
         </p>
         <p class="publication-award"></p>
       </div>
+
+
     </div>
     <div class="publication-entry row" data-year="2023" data-topic="Legged Locomotion & Mobility" data-selected="true">
       <div class="col-md-3">
-        <img src="imgs/locomotion_2.png" alt="Agile and Versatile Robot Locomotion via Kernel-based Residual Learning">
+        <img src="imgs/loco1.png" alt="Agile and Versatile Robot Locomotion via Kernel-based Residual Learning">
       </div>
       <div class="col-md-9">
         <h4><a href="https://ieeexplore.ieee.org/document/10160704" target="_blank">Agile and Versatile Robot Locomotion via Kernel-based Residual Learning</a></h4>
@@ -582,13 +630,15 @@
         </p>
         <p class="publication-links">
           <a href="https://ieeexplore.ieee.org/document/10160704" target="_blank">[Paper]</a>
+          <a href="https://youtu.be/bUZJadWCRXU" target="_blank">[Video]</a>
         </p>
         <p class="publication-award"></p>
       </div>
     </div>
+
     <div class="publication-entry row" data-year="2022" data-topic="Legged Locomotion & Mobility" data-selected="true">
       <div class="col-md-3">
-        <img src="imgs/locomotion_3.png" alt="Real-time Digital Double Framework to Predict Collapsible Terrains for Legged Robots">
+        <img src="imgs/loco3.png" alt="Real-time Digital Double Framework to Predict Collapsible Terrains for Legged Robots">
       </div>
       <div class="col-md-9">
         <h4><a href="https://ieeexplore.ieee.org/document/9981613" target="_blank">Real-time Digital Double Framework to Predict Collapsible Terrains for Legged Robots</a></h4>
@@ -604,9 +654,11 @@
         <p class="publication-award"></p>
       </div>
     </div>
+
+
     <div class="publication-entry row" data-year="2022" data-topic="Legged Locomotion & Mobility" data-selected="true">
       <div class="col-md-3">
-        <img src="imgs/locomotion_4.png" alt="Accessibility-Based Clustering for Efficient Learning of Locomotion Skills">
+        <img src="imgs/loco4.png" alt="Accessibility-Based Clustering for Efficient Learning of Locomotion Skills">
       </div>
       <div class="col-md-9">
         <h4><a href="https://ieeexplore.ieee.org/document/9812113" target="_blank">Accessibility-Based Clustering for Efficient Learning of Locomotion Skills</a></h4>
@@ -618,13 +670,16 @@
         </p>
         <p class="publication-links">
           <a href="https://ieeexplore.ieee.org/document/9812113" target="_blank">[Paper]</a>
+          <a href="https://youtu.be/7cZMThUn0rU" target="_blank">[Video]</a>
         </p>
         <p class="publication-award"></p>
       </div>
     </div>
+
+
     <div class="publication-entry row" data-year="2022" data-topic="Legged Locomotion & Mobility" data-selected="true">
       <div class="col-md-3">
-        <img src="imgs/locomotion_5.png" alt="Learning Motor Skills of Reactive Reaching and Grasping of Objects">
+        <img src="imgs/loco5.png" alt="Learning Motor Skills of Reactive Reaching and Grasping of Objects">
       </div>
       <div class="col-md-9">
         <h4><a href="https://ieeexplore.ieee.org/document/9739420" target="_blank">Learning Motor Skills of Reactive Reaching and Grasping of Objects</a></h4>
@@ -640,9 +695,10 @@
         <p class="publication-award"></p>
       </div>
     </div>
+
     <div class="publication-entry row" data-year="2022" data-topic="Legged Locomotion & Mobility" data-selected="true">
       <div class="col-md-3">
-        <img src="imgs/locomotion_6.png" alt="Learning Autonomous Mobility Using Real Demonstration Data">
+        <img src="imgs/loco6.png" alt="Learning Autonomous Mobility Using Real Demonstration Data">
       </div>
       <div class="col-md-9">
         <h4><a href="https://ieeexplore.ieee.org/document/9659394" target="_blank">Learning Autonomous Mobility Using Real Demonstration Data</a></h4>
@@ -658,9 +714,10 @@
         <p class="publication-award"></p>
       </div>
     </div>
+
     <div class="publication-entry row" data-year="2021" data-topic="Legged Locomotion & Mobility" data-selected="true">
       <div class="col-md-3">
-        <img src="imgs/locomotion_7.png" alt="Optimisation of body-ground contact for augmenting the whole-body loco-manipulation of quadruped robots">
+        <img src="imgs/loco7.png" alt="Optimisation of body-ground contact for augmenting the whole-body loco-manipulation of quadruped robots">
       </div>
       <div class="col-md-9">
         <h4><a href="https://ieeexplore.ieee.org/document/9341498" target="_blank">Optimisation of body-ground contact for augmenting the whole-body loco-manipulation of quadruped robots</a></h4>
@@ -676,9 +733,10 @@
         <p class="publication-award"></p>
       </div>
     </div>
+
     <div class="publication-entry row" data-year="2021" data-topic="Legged Locomotion & Mobility" data-selected="true">
       <div class="col-md-3">
-        <img src="imgs/locomotion_8.png" alt="Meta-Reinforcement Learning for Adaptive Motor Control in Changing Robot Dynamics and Environments">
+        <img src="imgs/loco8.png" alt="Meta-Reinforcement Learning for Adaptive Motor Control in Changing Robot Dynamics and Environments">
       </div>
       <div class="col-md-9">
         <h4><a href="https://arxiv.org/abs/2101.07599" target="_blank">Meta-Reinforcement Learning for Adaptive Motor Control in Changing Robot Dynamics and Environments</a></h4>
@@ -690,13 +748,16 @@
         </p>
         <p class="publication-links">
           <a href="https://arxiv.org/abs/2101.07599" target="_blank">[Paper]</a>
+          <a href="https://www.youtube.com/watch?v=s9OWhxorVmc" target="_blank">[Video]</a>
         </p>
         <p class="publication-award"></p>
       </div>
     </div>
+
+
     <div class="publication-entry row" data-year="2020" data-topic="Legged Locomotion & Mobility" data-selected="true">
       <div class="col-md-3">
-        <img src="imgs/locomotion_9.png" alt="Variable Autonomy of Whole-body Control for Inspection and Intervention in Industrial Environments using Legged Robots">
+        <img src="imgs/loco9.png" alt="Variable Autonomy of Whole-body Control for Inspection and Intervention in Industrial Environments using Legged Robots">
       </div>
       <div class="col-md-9">
         <h4><a href="https://ieeexplore.ieee.org/document/9216813" target="_blank">Variable Autonomy of Whole-body Control for Inspection and Intervention in Industrial Environments using Legged Robots</a></h4>
@@ -708,6 +769,7 @@
         </p>
         <p class="publication-links">
           <a href="https://ieeexplore.ieee.org/document/9216813" target="_blank">[Paper]</a>
+          <a href=" https://youtu. be/tIyfUjJgJI" target="_blank">[Video]</a>
         </p>
         <p class="publication-award"></p>
       </div>

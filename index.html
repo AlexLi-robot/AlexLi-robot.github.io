@@ -90,6 +90,15 @@
         border-bottom: 1px solid #eee;
         margin-bottom: 1.5rem;
     }
+    .publication-entry video {
+        max-width: 100%;
+        max-height: 180px;
+        width: auto;
+        height: auto;
+        object-fit: cover;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
   </style>
 </head>
 <body>
@@ -122,7 +131,7 @@
         I received my Ph.D. in Robotics from the Italian Institute of Technology and the <a href="https://unige.it/en">University of Genova</a>, and previously held faculty and research positions at the <a href="https://www.ed.ac.uk/">University of Edinburgh</a> and <a href="https://www.iit.it/en">Italian Institute of Technology</a>.</p>
       <p>My research focuses on Embodied AI, robot learning, and intelligent control, with the overarching goal of enabling robots to perform skilful manipulation and locomotion in real-world domains.</p>
       <p>I am particularly interested in combining deep reinforcement learning, vision-language models, and multi-agent systems to develop autonomous systems with human-level adaptability and beyond.</p>
-      <p>My work has been published in Science Robotics and Nature Machine Intelligence, and has been featured by BBC News, Wired, New Scientist, and TechXplore. I also serve as an Associate Editor for IEEE journals and actively engage in UK’s national robotics initiatives.</p>
+      <p>My work has been published in Science Robotics and Nature Machine Intelligence, and has been featured by BBC News, Wired, New Scientist, and TechXplore. I also serve as an Associate Editor for IEEE journals and actively engage in UK's national robotics initiatives.</p>
       <p>
         <a href="https://scholar.google.com/citations?user=PrJjrjIAAAAJ&hl=en">Google Scholar</a> /
         <a href="https://www.youtube.com/@Alebotics">YoTube</a> /
@@ -155,6 +164,31 @@
   <h2>Selected Publications📖 <a href="publication.html" style="font-size:1rem; font-weight:normal; margin-left:1em;">[All Publications]</a></h2>
  
   <div id="publications-list">
+    <div class="publication-entry row" data-year="2024" data-topic="Manipulation" data-selected="true">
+      <div class="col-md-3">
+        <video autoplay muted loop playsinline>
+          <source src="imgs/paper_assets/dexskills_demo.mp4" type="video/mp4">
+          <!-- Fallback image if video doesn't load -->
+          <img src="imgs/paper_assets/cover1.png" alt="DexSkills: Skill Segmentation Using Haptic Data">
+        </video>
+      </div>
+      <div class="col-md-9">
+        <h4><a href="https://arxiv.org/pdf/2405.03476" target="_blank">DexSkills: Skill Segmentation Using Haptic Data for Learning Autonomous Long-Horizon Robotic Manipulation Tasks</a></h4>
+        <p class="publication-authors">
+          Xiaofeng Mao, Gabriele Giudici, Claudio Coppola, Kaspar Althoefer, Ildar Farkhatdinov, <strong>Zhibin Li†</strong>, Lorenzo Jamone
+        </p>
+        <p class="publication-venue">
+          <em><b>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</b></em>, 2024
+        </p>
+        <p class="publication-links">
+          <a href="https://arxiv.org/pdf/2405.03476" target="_blank">[Paper]</a>
+          <!-- <!-- <a href="#" target="_blank">[Project Page]</a> -->
+          <a href="https://github.com/ARQ-CRISP/DexSkills" target="_blank">[Code]</a>
+          <!-- <a href="#" target="_blank">[Video]</a> --> 
+        </p>
+        <p class="publication-award"></p>
+      </div>
+    </div>
     <div class="publication-entry row" data-year="2023" data-topic="Generative Models" data-selected="true">
       <div class="col-md-3">
         <img src="imgs/paper_assets/cover1.png" alt="Hierarchical generative modelling for autonomous robots">
@@ -169,13 +203,14 @@
         </p>
         <p class="publication-links">
           <a href="https://www.nature.com/articles/s42256-023-00752-z" target="_blank">[Paper]</a>
-          <!-- <a href="#" target="_blank">[Project Page]</a>
-          <a href="#" target="_blank">[Code]</a>
-          <a href="#" target="_blank">[Video]</a> -->
+       <!-- <a href="#" target="_blank">[Project Page]</a> -->
+          <a href="https://github.com/ARQ-CRISP/DexSkills" target="_blank">[Code]</a>
+          <!-- <a href="#" target="_blank">[Video]</a> -->
         </p>
         <p class="publication-award"></p>
       </div>
     </div>
+
     <div class="publication-entry row" data-year="2023" data-topic="Robot Manipulation" data-selected="true">
       <div class="col-md-3">
         <img src="imgs/paper_assets/cover2.png" alt="Hybrid hierarchical learning for complex robotic tasks">
@@ -247,7 +282,7 @@
   <ul>
     <li><strong>2023 Jan</strong> – Invited talk at 4th UK Manipulation Workshop: <em>"Learning Adaptive Motor Skills for Dexterous Manipulation and Grasping"</em></li>
     <li><strong>2021 Oct</strong> – Invited talk at IROS Workshop on Advances in Space Robotics: <em>"Human-Centered Teleoperation for Space Robotics"</em></li>
-    <li><strong>2021 Sep</strong> – Public talk at FAIR-SPACE/ORCA UK RAI Hub Webinar: <em>"Remote bimanual manipulation and evaluation of operator’s mental load and performance during teleoperation"</em></li>
+    <li><strong>2021 Sep</strong> – Public talk at FAIR-SPACE/ORCA UK RAI Hub Webinar: <em>"Remote bimanual manipulation and evaluation of operator's mental load and performance during teleoperation"</em></li>
     <li><strong>2021 Sep</strong> – Talk at Queen Mary University of London: <em>"Learning motor skills for robot locomotion and manipulation"</em></li>
     <li><strong>2021 Jul</strong> – Talk at Tsinghua University: <em>"Prospects of control and movement skills for robot locomotion"</em></li>
     <li><strong>2021 Jun</strong> – Talk at A*STAR Singapore: <em>"State of the art of legged locomotion and future directions"</em></li>
