@@ -99,6 +99,26 @@
         border: 1px solid #ddd;
         border-radius: 4px;
     }
+    .video-scroll-container {
+      display: flex;
+      overflow-x: auto;
+      padding-bottom: 1rem;
+      gap: 1rem;
+    }
+    .video-scroll-container video {
+      width: 200px;
+      height: auto;
+      flex-shrink: 0;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+    }
+    .video-scroll-container::-webkit-scrollbar {
+      display: none;
+    }
+    .video-scroll-container {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
   </style>
 </head>
 <body>
@@ -184,6 +204,7 @@
   </div>
 </div>
 
+
 <div class="publication-entry row" data-year="2024" data-topic="Space Robotics" data-selected="true">
   <div class="col-md-3">
     <video autoplay muted loop playsinline>
@@ -202,6 +223,49 @@
     <p class="publication-links">
       <a href="https://www.fairspacehub.org/" target="_blank">[Project Website]</a>
     </p>
+  </div>
+</div>
+
+
+<div class="publication-entry row" data-year="2015" data-topic="Disaster Response" data-selected="true">
+  <div class="col-md-3">
+    <video autoplay muted loop playsinline>
+      <source src="imgs/project_assets/whole_body.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="col-md-9">
+    <h4><a href="#" target="_blank">WALKMAN DRC: The WALKMAN Robot in DARPA Robotics Challenge</a></h4>
+    <p class="publication-authors">
+      The WALKMAN robot was created by the Italian Institute of Technology (IIT) in Genova, leading the only European team with a fully inhouse built robot to compete in the DARPA Robotics Challenge (DRC) Finals in 2015.
+    </p>
+    <p class="publication-venue">
+      It was 1.85 meters tall advanced dexterous manipulation to compete in the 2015 DARPA Robotics Challenge Finals in performing disaster response.
+    </p>
+    <!-- <p class="publication-links">
+      <a href="#" target="_blank">[Project Website]</a>
+    </p> -->
+  </div>
+  <div class="col-md-12 mt-3">
+      <div class="video-scroll-container">
+          <video autoplay muted loop playsinline>
+              <source src="imgs/project_assets/1.mp4" type="video/mp4">
+          </video>
+          <video autoplay muted loop playsinline>
+              <source src="imgs/project_assets/2.mp4" type="video/mp4">
+          </video>
+          <video autoplay muted loop playsinline>
+              <source src="imgs/project_assets/3.mp4" type="video/mp4">
+          </video>
+          <video autoplay muted loop playsinline>
+              <source src="imgs/project_assets/4.mp4" type="video/mp4">
+          </video>
+          <video autoplay muted loop playsinline>
+              <source src="imgs/project_assets/5.mp4" type="video/mp4">
+          </video>
+          <video autoplay muted loop playsinline>
+              <source src="imgs/project_assets/6.mp4" type="video/mp4">
+          </video>
+      </div>
   </div>
 </div>
 
@@ -485,5 +549,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
